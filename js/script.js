@@ -4,7 +4,6 @@ const tabuadaTitle = document.querySelector('span#tabuada-do-numero');
 
 btnShowTabuada.addEventListener('click', function (){
    const numberInput = document.querySelector('#number').value;
-   console.log(numberInput);
    resetTabuada();
    showTabuadaTitle(numberInput);
    calcularTabuada(numberInput, tabuadaTitle);
