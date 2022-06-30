@@ -14,7 +14,6 @@ body{
    color: black;  
    background-image: url(../assets/bg.jpg);
 }
-
 h1{
    padding: 10px;
    background-color: white;
@@ -29,7 +28,7 @@ h1{
    font-size: 2em;
    padding: 20px;
 }
-#tabuada{
+.tabuada{
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -39,6 +38,12 @@ h1{
    height: 440px;
    margin-top: 60px;
 }
+.tabuada .instruction{
+   animation-name: flashing;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+
 .container-calcular{
    margin: 20px ;
 }
@@ -53,4 +58,9 @@ button{
 }
 button:hover{
    background-color: rgb(240, 38, 38);
+}
+
+@keyframes flashing{
+   50%{opacity: 50%;}
+   100%{opacity: 100%;}
 }
